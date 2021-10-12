@@ -14,4 +14,12 @@
     <color name="blue">#3255ED</color>
     <color name="dark_blue">#101E41</color>
 
+
+    <color name="main">#5869FF</color>
+
+    <color name="text_gray">#515150</color>
+
+    <color name="onboard_text_heading">#222B45</color>
+    <color name="onboarding_indicator_active">#636CE3</color>
+
 </resources>
