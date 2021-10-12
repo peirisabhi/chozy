@@ -93,34 +93,27 @@ public class OnboardingFragment extends Fragment {
         List<OnboardingItem> onboardingItems = new ArrayList<>();
 
         OnboardingItem item1 = new OnboardingItem();
-        item1.setTitle("Welcome");
-        item1.setSubTitle("to DoctGo");
-        item1.setDescription("Book an appointment with a right doctor..");
-        item1.setImg(R.drawable.ic_onboarding_1);
+        item1.setTitle("Choose");
+        item1.setSubTitle("A Tasty Dish");
+        item1.setDescription("Order anything you want from your favourite restaurant..");
+        item1.setImg(R.drawable.ic_onboarding1);
 
         OnboardingItem item2 = new OnboardingItem();
-        item2.setTitle("Ask a Doctor Online");
-        item2.setSubTitle("Search Doctors");
-        item2.setDescription("Get list of best doctor nearby you..");
-        item2.setImg(R.drawable.ic_onboarding_2);
+        item2.setTitle("Easy");
+        item2.setSubTitle("Payments");
+        item2.setDescription("Payment made easy through debit card, credit card  & more ways to pay for your food..");
+        item2.setImg(R.drawable.ic_onboarding2);
 
 
         OnboardingItem item3 = new OnboardingItem();
-        item3.setTitle("Physician");
-        item3.setSubTitle("on Your Doorstep");
-        item3.setDescription("Book Your Physician..");
-        item3.setImg(R.drawable.ic_onboarding_3);
-
-        OnboardingItem item4 = new OnboardingItem();
-        item4.setTitle("Medicine");
-        item4.setSubTitle("on Your Doorstep");
-        item4.setDescription("Order Your Medicines..");
-        item4.setImg(R.drawable.ic_onboarding_4);
+        item3.setTitle("Enjoy");
+        item3.setSubTitle("The Taste!");
+        item3.setDescription("Healthy eating means eating a variety of foods that give you the nutrients you need to maintain your health...");
+        item3.setImg(R.drawable.ic_onboarding3);
 
         onboardingItems.add(item1);
         onboardingItems.add(item2);
         onboardingItems.add(item3);
-        onboardingItems.add(item4);
 
         onboardingAdapter = new OnboardingAdapter(onboardingItems);
 
