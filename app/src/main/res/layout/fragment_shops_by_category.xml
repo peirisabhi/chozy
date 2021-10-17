@@ -356,7 +356,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="8dp"
-                        android:text="Pista House"
+                        android:text="Pizza Hut"
                         android:textColor="#333333"
                         android:textSize="20dp"
                         android:textStyle="bold"

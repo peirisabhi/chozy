@@ -9,4 +9,14 @@
     <string name="onboarding1_heading_2">to Choizy</string>
     <string name="onboarding1_text">Far far away, behind the word mountains,
 far from the countries Vokalia and Consonantia, there live the blind texts.</string>
+
+
+    <string-array name="locations">
+        <item>All Branches</item>
+        <item>Colombo</item>
+        <item>Negombo</item>
+        <item>Seeduwa</item>
+        <item>Bambalapitiya</item>
+        <item>Katana</item>
+    </string-array>
 </resources>
