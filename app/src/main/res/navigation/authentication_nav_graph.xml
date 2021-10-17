@@ -11,6 +11,12 @@
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
 
+        <action
+            android:id="@+id/action_splashFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_loginOrSignUpFragment"
+            app:destination="@id/loginOrSignUpFragment" />
     </fragment>
 
     <fragment
@@ -19,34 +25,32 @@
         android:label="fragment_login_or_sign_up"
         tools:layout="@layout/fragment_login_or_sign_up" >
 
+        <action
+            android:id="@+id/action_loginOrSignUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_loginOrSignUpFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.abhi.chozy.ui.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-
-    </fragment>
+        tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.abhi.chozy.ui.signUp.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" />
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.abhi.chozy.ui.home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
-    <fragment
-        android:id="@+id/accountFragment"
-        android:name="com.abhi.chozy.ui.account.AccountFragment"
-        android:label="fragment_account"
-        tools:layout="@layout/fragment_account" />
-    <fragment
         android:id="@+id/onboardingFragment"
         android:name="com.abhi.chozy.ui.onboarding.OnboardingFragment"
         android:label="fragment_onboarding"
-        tools:layout="@layout/fragment_onboarding" />
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_loginOrSignUpFragment"
+            app:destination="@id/loginOrSignUpFragment" />
+    </fragment>
 
 </navigation>

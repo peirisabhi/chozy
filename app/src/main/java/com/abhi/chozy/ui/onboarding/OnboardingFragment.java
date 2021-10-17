@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.viewpager2.widget.ViewPager2;
 
 
@@ -80,7 +82,8 @@ public class OnboardingFragment extends Fragment {
                     onboardingViewPager.setCurrentItem(onboardingViewPager.getCurrentItem() + 1);
                 }else{
 
-//                    OnboardingFragment
+                    NavDirections navDirections = OnboardingFragmentDirections.actionOnboardingFragmentToLoginOrSignUpFragment();
+                    Navigation.findNavController(binding.getRoot()).navigate(navDirections);
 
                 }
             }
