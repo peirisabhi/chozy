@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/shopsByCategoryFragment">
+    app:startDestination="@id/shopFragment">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -27,4 +27,9 @@
         android:name="com.abhi.chozy.ui.shopsByCategory.ShopsByCategoryFragment"
         android:label="fragment_shops_by_category"
         tools:layout="@layout/fragment_shops_by_category" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.abhi.chozy.ui.shop.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
 </navigation>
