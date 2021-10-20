@@ -19,4 +19,14 @@ far from the countries Vokalia and Consonantia, there live the blind texts.</str
         <item>Bambalapitiya</item>
         <item>Katana</item>
     </string-array>
+
+
+    <string-array name="payment_types">
+        <item>Cash In Online</item>
+        <item>Card In Online</item>
+        <item>Cash In Visit</item>
+        <item>Card In Visit</item>
+        <item>Loan</item>
+        <item>QR-Pay</item>
+    </string-array>
 </resources>
