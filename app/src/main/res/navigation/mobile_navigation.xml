@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/cartFragment">
+    app:startDestination="@id/orderSuccessFragment">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -37,4 +37,9 @@
         android:name="com.abhi.chozy.ui.cart.CartFragment"
         android:label="fragment_cart"
         tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/orderSuccessFragment"
+        android:name="com.abhi.chozy.ui.orderSuccess.OrderSuccessFragment"
+        android:label="fragment_order_success"
+        tools:layout="@layout/fragment_order_success" />
 </navigation>
