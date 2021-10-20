@@ -14,13 +14,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.abhi.chozy.R;
+import com.abhi.chozy.databinding.FragmentSplashBinding;
 
 import org.jetbrains.annotations.NotNull;
 
 
 public class SplashFragment extends Fragment {
 
-
+    FragmentSplashBinding binding;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,10 @@ public class SplashFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_splash, container, false);
+
+        binding = FragmentSplashBinding.inflate(inflater, container, false);
+
+        return binding.getRoot();
     }
 
 
@@ -44,16 +47,24 @@ public class SplashFragment extends Fragment {
             @Override
             public void run() {
 
+                binding.imageView4.setImageResource(R.drawable.logo2);
 
-//                Intent intent = new Intent(requireActivity(), OnboardingActivity.class);
-//                startActivity(intent);
-//                getActivity().finish();
-
-                NavDirections navDirections = SplashFragmentDirections.actionSplashFragmentToOnboardingFragment();
-                Navigation.findNavController(view).navigate(navDirections);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        NavDirections navDirections = SplashFragmentDirections.actionSplashFragmentToOnboardingFragment();
+                        Navigation.findNavController(view).navigate(navDirections);
+                    }
+                }, 3000);
 
             }
-        }, 1000);
+        }, 3000);
 
     }
+
+
+    private void step2(View view){
+
+    }
+
 }

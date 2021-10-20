@@ -12,6 +12,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
@@ -62,6 +64,16 @@ public class HomeFragment extends Fragment {
         viewPager2 = binding.viewPagerImageSlider;
 
         loadImageSlider();
+
+
+        binding.shopyByCategory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavDirections navDirections = HomeFragmentDirections.actionNavigationHomeToShopsByCategoryFragment();
+                Navigation.findNavController(binding.getRoot()).navigate(navDirections);
+            }
+        });
+
     }
 
 
